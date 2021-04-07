@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Books Store</title>
+</head>
+
+<body onload="onInit ()">
+    <header>
+        <h1>Book Shop</h1>
+    </header>
+    <nav class="navbar">
+        <button class="prv-page">◀</button>
+        <div class="nav-handler">
+            <button class="filter">Filter</button>
+            <button class="add-book" onclick="onAddBook ()">Add Book</button>
+            <button class="sort">sort</button>
+        </div>
+        <button class="next page">▶</button>
+    </nav>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <td class="id">ID</td>
+                    <td class="title">Book Title</td>
+                    <td class="author">Author</td>
+                    <td class="price">Price</td>
+                    <td class="actions" colspan="3">Actions</td>
+                </tr>
+            </thead>
+            <tbody class="book-container"> </tbody>
+            </thead>
+            <section class="modal"></section>
+        </table>
+    </section>
+
+
+    <script src="./js/services/util-service.js"></script>
+    <script src="./js/services/storage-service.js"></script>
+    <script src="./js/services/books-service.js"></script>
+    <script src="./js/books-controller.js"></script>
+
+</body>
+
+</html>

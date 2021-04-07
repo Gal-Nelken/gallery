@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(167, 126, 243, 0.445);
+    margin: 0 auto;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(156, 165, 107, 0.589);
+    margin: 0 10%;
+    display: flex;
+    flex-flow: row;
+}
+
+.nav-handler button {
+    margin: 0 5vw;
+    padding: 5px 10px;
+}
+
+table {
+    margin: 0 10%;
+    border: solid 1px;
+    width: 80%;
+    height: 80%;
+}
+
+thead {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(0, 54, 56);
+}
+
+td {
+    border: solid 1px black;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+}
+
+.id {
+    width: 2%;
+    text-align: left;
+}
+
+.title {
+    width: 25%;
+}
+
+.author {
+    width: 15%;
+}
+
+.price {
+    width: 5%;
+    font-weight: bold;
+}
+
+.actions {
+    width: 20%;
+}
+
+.act-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.expand, .update, .remove {
+    padding: 2% 5%;
+}
+
+.expand {
+    color: rgb(245, 231, 188);
+    border: 2px solid rgb(38, 46, 3);
+    background-color: rgba(52, 4, 116, 0.486);
+}
+
+.update {
+    color: rgb(51, 29, 29);
+    border: 2px solid rgb(38, 46, 3);
+    background-color: rgba(226, 223, 6, 0.486);
+}
+
+.remove {
+    color: rgb(247, 239, 239);
+    border: 2px solid rgb(38, 46, 3);
+    background-color: rgba(212, 10, 10, 0.651);
+}
+
+.modal {
+    background-color: lavender;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35vw;
+    height: fit-content;
+    min-height: 80%;
+    top: 0;
+    left: 0;
+    border: 2px solid rgba(128, 37, 37, 0.555);
+}
+
+.modal span {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.row-modal {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-overflow: clip;
+}
+
+.row-modal input {
+    width: 35%;
+    margin: 0 auto;
+}
+
+textarea {
+margin: 0px; 
+width: 90%;
+}

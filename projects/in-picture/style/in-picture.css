@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(90, 112, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 61, 85);
+    padding: 1px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;    
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    color: bisque;
+    font-size: 30px;
+}
+
+.header p {
+    color: rgb(238, 187, 124);
+    font-size: 20px;
+    margin: 2px;
+}
+
+.restart {
+    font-size: 30px;
+    color: rgb(255 242 76);
+    padding: 15px;
+}
+
+button {
+    display: block;
+    padding: 5px;
+    background-color: rgb(66, 66, 66);
+    color: rgb(214, 202, 33);
+    border: rgb(214, 202, 33) solid 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100px;
+    font-size: large;
+    transition: 50ms ease-in;
+}
+
+button:hover {
+    color: rgb(69, 255, 62);
+    border: rgb(5, 153, 0) solid 2px;
+    cursor: pointer;
+}
+
+.game {
+    display: block;
+    margin: auto 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.pic img {
+    transition: ease 100ms;
+    width: 400px;
+    margin: auto 10px;
+    border: groove rgb(37, 43, 99) 1px;
+}
+
+.options {
+    display: inline-block;
+    transition: ease 100ms;
+    bottom: 1%;
+
+}
+
+.answers {
+    transition: 50ms;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(179, 168, 28);
+    background-color: rgb(4, 15, 46);
+    border: rgb(179, 168, 28) 2px double;
+    transition: ease 200ms;
+}
+
+.answers:hover {
+    color: rgb(4, 15, 46);
+    background-color: rgb(179, 168, 28);
+    border: rgb(4, 15, 46) 2px double;
+    cursor: pointer;
+}

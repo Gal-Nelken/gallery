@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/projects/mine-sweeper/pictures/background_image.jpg");
+    background-size: 100vw 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    box-shadow: inset 3px 1px 26px 5px #801c00;
+    color: burlywood;
+    background-color: rgb(67, 99, 41);
+    border: rgb(168, 231, 67) double 2px;
+    border-radius: 35%;
+    padding: 15px;
+    margin: 10px 50px;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+
+.game-tab, .player-tab, .mine-board {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+    margin: 0 30%;
+}
+
+.game-tab {
+    width: 40vw;
+    background-color: #352727;
+    color: #352727;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.game-tab h4 {
+    margin: 0;
+}
+
+.game-tab button {
+    padding: 5px;
+    text-align: center;
+    background-color: lavender;
+    border: black double 2px;
+    cursor: pointer;
+}
+
+.timer, .mines-count span {
+    background-color: #ddefc1;
+    height: 100%;
+    border: black double 2px;
+}
+
+.player-tab {
+    background-color: rgb(175, 175, 175);
+    width: 40vw;
+    justify-content: space-between;
+}
+
+.radio-bar {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #352727;
+    color: #ddefc1;
+    border: #655050 double 2px;
+    padding-top: 5px 0;
+}
+
+.radio-bar label {
+    background-color: #3f2e2eb4;
+    padding: 2%;
+}
+
+.radio-bar input, .cell:hover {
+    cursor: pointer;
+}
+
+.player-tab h4 {
+    color: rgb(165, 5, 5);
+    font-size: 25px;
+    background-color: #ddefc1;
+    border: #655050 double 3px;
+    border-radius: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hints:hover {
+    font-size: 25px;
+    background-color: #a6ad9a;
+    border: #ddefc1 double 3px;
+    cursor: pointer;
+}
+
+.cell {
+    height: 30px;
+    width: 30px;
+    background-color: #bfd39f;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border: black 1px solid;
+}
+
+.cell:hover {
+    background-color: #dce2d1;
+    border: rgb(0, 66, 6) 1px solid;
+}
+
+.mine-board {
+    justify-content: center;
+}

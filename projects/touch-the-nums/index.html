@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Brain Games 👀</title>
+</head>
+
+<body onload="initGame()">
+    <div class="header">
+        <h1> 🔢👉 Touch The Numbers 👈🔢 </h1>
+        <h3>Press the numbers in the correct sequence</h3>
+    </div>
+
+    <div class="difficulty-bar">
+        <label for="easy">Easy
+            <input id="easy" type="radio" name="game" data-num="16" data-difficulty="easy" onclick="levelClick(this)"
+                checked>
+        </label>
+        <label for="Medium">Medium
+            <input type="radio" name="game" data-num="25" data-difficulty="medium" onclick="levelClick(this)">
+        </label>
+        <label for="hard">Hard
+            <input type="radio" name="game" data-num="36" data-difficulty="hard" onclick="levelClick(this)">
+        </label>
+    </div>
+
+    <div class="player-tab">
+        <div class="timer">Time: <span>00:000</span></div>
+        <button onclick="initGame ()">Shuffle Numbers</button>
+        <div class="mistakes">Mistakes:<span>0</span></div>
+    </div>
+
+    <div class="game">
+        <table>
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

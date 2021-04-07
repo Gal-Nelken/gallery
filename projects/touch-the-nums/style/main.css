@@ -1,0 +1,98 @@
+body {
+    background-color: darkgray;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.header {
+    padding: 10px;
+    font-size: 23px;
+    background-color: rgb(56, 7, 7);
+    color: rgb(216, 203, 90);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.difficulty-bar {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    background-color: rgb(78, 14, 14);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    color: khaki;
+    padding: 10px;
+
+}
+
+.restart {
+    font-size: 30px;
+    color: rgb(255 242 76);
+    padding: 15px;
+}
+
+button {
+    display: block;
+    padding: 5px;
+    background-color: rgb(75, 0, 0);
+    color: rgb(214, 202, 33);
+    border: rgb(214, 202, 33) solid 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100px;
+    font-size: large;
+    transition: 50ms;
+    
+}
+
+button:hover {
+    color: gold;
+    border: goldenrod double 4px;
+    cursor: pointer;
+}
+
+.player-tab {
+display: flex;
+flex-direction: row;
+text-align: center;
+align-content: center;
+justify-content: center;
+}
+
+.timer, .mistakes {
+    display: block;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    border: indigo solid 1px;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightslategrey;
+    color: maroon;
+    transition: 50ms;
+}
+
+.game {
+    display: inline-flex;
+    margin: 10px;
+}
+
+tr, td {
+    border: double rgb(124, 27, 27) 2px;
+    padding: 50px;
+    font-size: larger;
+}
+
+.game-cell {
+    background-color: rgb(97, 56, 56);
+    color: rgb(196, 255, 245);
+    transition: 50ms;
+}
+
+.game-cell:hover {
+    background-color: rgb(56, 7, 7);
+    color: rgba(236, 236, 236, 0.877);
+    cursor: pointer;
+}
